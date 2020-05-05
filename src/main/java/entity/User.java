@@ -1,11 +1,11 @@
 package entity;
 
 public class User {
-    private int id;
+    private Long id;
     private String login;
     private String password;
 
-    public User(int id, String login, String password) {
+    public User(Long id, String login, String password) {
         this.id = id;
         this.login = login;
         this.password = password;
@@ -18,5 +18,9 @@ public class User {
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +
                 '}';
+    }
+
+    public Long getId() {
+        return id;
     }
 }
