@@ -6,9 +6,9 @@ import java.util.List;
 
 public interface ProductService {
     List<Product> getAllProducts();
-    int getNumberOfProducts();
-    Product getProductName(String productName);
-    boolean isProductAvailable(String productName);
-    boolean isProductAvailable(int id);
-
+    Integer getCountProducts();
+    Product getProductByProductName(String productName);
+    boolean isProductOnWarehouse(String productName);
+    boolean isProductExist(String productName);
+    boolean isProductExist(Long productId);
 }
